@@ -18,7 +18,7 @@ end
 
 ---@param type string HTML Tag
 ---@param attributes table<string, any>? HTML Attributes
----@param ... Element | Element[] | string
+---@param ... Element | table<Element> | string
 ---@return Element
 return function ( type, attributes, ... )
     local children = {}
