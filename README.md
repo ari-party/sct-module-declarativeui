@@ -6,6 +6,7 @@
 ## Getting started with editing
 
 Prerequisites:
+
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Node](https://nodejs.org/en/download)
 - [pnpm](https://pnpm.io/installation)
