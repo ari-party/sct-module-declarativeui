@@ -7,7 +7,7 @@ local function render( element )
 
     local segments = {}
 
-    table.insert( segments, '<' .. element.component ) -- Partial opening tag
+    table.insert( segments, '<' .. element.type ) -- Partial opening tag
     if string.len( attributes ) > 0 then table.insert( segments, ' ' .. attributes ) end
 
     if #element.children == 0 then
@@ -27,7 +27,7 @@ local function render( element )
 
         table.insert( segments, table.concat( children, '' ) )
 
-        table.insert( segments, '</' .. element.component .. '>' ) -- Closing tag
+        table.insert( segments, '</' .. element.type .. '>' ) -- Closing tag
     end
 
     return table.concat( segments, '' )

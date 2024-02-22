@@ -1,6 +1,6 @@
 local render = require( 'render' )
 
----@alias Element { component: string; attributes: table<string, any>; children: table, render?: function }
+---@alias Element { type: string; attributes: table<string, any>; children: table, render?: function }
 
 local function iterateChildren( child )
     local children = {}
@@ -16,11 +16,11 @@ local function iterateChildren( child )
     return children
 end
 
----@param component string HTML Tag
+---@param type string HTML Tag
 ---@param attributes table<string, any>? HTML Attributes
 ---@param ... Element | Element[] | string
 ---@return Element
-return function ( component, attributes, ... )
+return function ( type, attributes, ... )
     local children = {}
     for _, child in ipairs( { ... } ) do
         for _, iteratedChild in ipairs( iterateChildren( child ) ) do
@@ -29,7 +29,7 @@ return function ( component, attributes, ... )
     end
 
     local element = {
-        component = component,
+        type = type,
         attributes = attributes or {},
         children = children
     }
