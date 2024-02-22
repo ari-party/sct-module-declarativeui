@@ -1,7 +1,7 @@
 # DeclarativeUI
 
 > [!NOTE]  
-> View usage and examples on [the Star Citizen Wiki](https://starcitizen.tools/Module:DeclarativeUI)
+> View usage and examples on [the Star Citizen Wiki](https://starcitizen.tools/Module:DeclarativeUI).
 
 ## Getting started with editing
 
